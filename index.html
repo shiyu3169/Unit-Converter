@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit Converter</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+ 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+ 	<meta name="viewport" content="initial-scale=1.25, user-scalable=no">
+ 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+ 	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center display-4 mb-3">Unit Converter</h1>
+		<form>
+			<div class="form-group">
+				<input class="form-control form-control-lg" type="number" name="inputValue" id="inputValue" placeholder="Enter Pounds...">
+			</div>
+		</form>
+		<div id="output">
+			<!-- Gram -->
+			<div class="card bg-primary mb-2">
+				<div class="card-header">
+					<h4>Grams:</h4>
+					<div id="gram"></div>
+				</div>
+			</div>
+			<!-- Kilogram -->
+			<div class="card bg-success mb-2">
+				<div class="card-header">
+					<h4>Kilograms:</h4>
+					<div id="kg"></div>
+				</div>
+			</div>
+			<!-- Ounce -->
+			<div class="card bg-danger">
+				<div class="card-header">
+					<h4>Ounces:</h4>
+					<div id="oz"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
