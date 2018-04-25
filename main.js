@@ -66,14 +66,14 @@ function convertLbs(num) {
 			'<div class="card bg-success mb-2">' +
 				'<div class="card-header">' +
 					'<h4>Kilograms:</h4>' +
-					'<div>'+ value * 453.592 / 1000 +'</div>' +
+					'<div>'+ num * 453.592 / 1000 +'</div>' +
 				'</div>' +
 			'</div>' +
 			// Ounces
 			'<div class="card bg-danger">' +
 				'<div class="card-header">' +
 					'<h4>Ounces:</h4>' +
-					'<div>' + value * 16 +'</div>' +
+					'<div>' + num * 16 +'</div>' +
 				'</div>' +
 			'</div>' 
 }
