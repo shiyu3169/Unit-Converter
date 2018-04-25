@@ -12,33 +12,30 @@
 	<div class="container">
 		<h1 class="text-center display-4 mb-3">Unit Converter</h1>
 		<form>
-			<div class="form-group">
+			<div class="input-group">
 				<input class="form-control form-control-lg" type="number" name="inputValue" id="inputValue" placeholder="Enter Pounds...">
+				<div class="input-group-append">
+					<select class="btn" id="unit">
+						<optgroup label="Weight">
+							<option>lbs</option>
+							<option>grams</option>
+							<option>kilograms</option>
+							<option>ounces</option>
+						</optgroup>
+						<optgroup label="Temprature">
+							<option>Fahrenheit</option>
+							<option>Centigrade</option>
+						</optgroup>
+						<optgroup label="Distance"> 
+							<option>meters</option>
+							<option>miles</option>
+							<option>inches</option>
+						</optgroup>
+					</select>
+				</div>
 			</div>
 		</form>
-		<div id="output">
-			<!-- Gram -->
-			<div class="card bg-primary mb-2">
-				<div class="card-header">
-					<h4>Grams:</h4>
-					<div id="gram"></div>
-				</div>
-			</div>
-			<!-- Kilogram -->
-			<div class="card bg-success mb-2">
-				<div class="card-header">
-					<h4>Kilograms:</h4>
-					<div id="kg"></div>
-				</div>
-			</div>
-			<!-- Ounce -->
-			<div class="card bg-danger">
-				<div class="card-header">
-					<h4>Ounces:</h4>
-					<div id="oz"></div>
-				</div>
-			</div>
-		</div>
+		<div id="output"></div>
 	</div>
 	<script type="text/javascript" src="main.js"></script>
 </body>
