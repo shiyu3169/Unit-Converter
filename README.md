@@ -7,7 +7,7 @@ This is a project for educational purpose.
 
 ### Tech
 
-Bookmarked uses pure javascript with a css framework:
+This application uses pure JavaScript with a CSS framework:
 
 * [Twitter Bootstrap] - great UI boilerplate for modern web apps
 
