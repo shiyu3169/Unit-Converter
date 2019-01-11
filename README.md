@@ -13,3 +13,7 @@ This application uses pure JavaScript with a CSS framework:
 * [Twitter Bootstrap] - great UI boilerplate for modern web apps
 
    [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
+   
+### Run
+
+Simply open the index.html in your favorite browser
