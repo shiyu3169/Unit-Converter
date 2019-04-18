@@ -1,26 +1,19 @@
 // Select input field
-var input = document.querySelector("#input");
+const input = document.querySelector("#input");
 
 // Select unit selections
-var unit = document.querySelector("#unit");
+const unit = document.querySelector("#unit");
 
-// Catch user input event and unit change
-input.addEventListener("input", convert);
-unit.addEventListener("input", convert);
-
-function convert() {
+const convert = () => {
 
     // Get value of user input and units
-    var value = input.value;
-    var unitValue = unit.value;
-    var output = document.querySelector("#output");
+    const value = input.value;
+    const unitValue = unit.value;
+    const output = document.querySelector("#output");
 
     // Show output when there is a value
-    if(value !== "") {
-        output.style.display = "block";
-    } else {
-        output.style.display = "none";
-    }
+    (value !== "") ? 
+      output.style.display = "block" : output.style.display = "none";
 
     // check unit type
     switch(unitValue) {
@@ -43,11 +36,11 @@ function convert() {
     }
 }  
 
-var card1 = document.querySelector("#card-1");
-var card2 = document.querySelector("#card-2");
-var card3 = document.querySelector("#card-3");
+const card1 = document.querySelector("#card-1");
+const card2 = document.querySelector("#card-2");
+const card3 = document.querySelector("#card-3");
 
-function convertLbs(value) {
+const convertLbs = value => {
     card1.querySelector('h4').textContent="Grams:"
     card2.querySelector('h4').textContent="Kilograms:"
     card3.querySelector('h4').textContent="Ounces:"
@@ -57,7 +50,7 @@ function convertLbs(value) {
     card3.querySelector('div').textContent= value * 16
 }
 
-function convertGrams(value) {
+const convertGrams = value => {
     card1.querySelector('h4').textContent="kilograms:"
     card2.querySelector('h4').textContent="Ounces:"
     card3.querySelector('h4').textContent="Lbs:"
@@ -66,3 +59,7 @@ function convertGrams(value) {
     card2.querySelector('div').textContent= value * 0.035274;
     card3.querySelector('div').textContent= value * 0.00220462;
 }
+
+// Catch user input event and unit change
+input.addEventListener("input", convert);
+unit.addEventListener("input", convert);
